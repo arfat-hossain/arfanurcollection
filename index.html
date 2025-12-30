@@ -1,0 +1,2802 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ARFANUR COLLECTION - প্রিমিয়াম বেবি পোশাক</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-gold: #d4af37;
+            --secondary-gold: #b8941f;
+            --light-gold: #ffd700;
+            --dark-gold: #a67c00;
+            --background-gold: #fff8e1;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --white: #ffffff;
+            --shadow: rgba(212, 175, 55, 0.15);
+            --transition: all 0.3s ease;
+            --baby-blue: #36a1d8;
+            --baby-pink: #ff69b4;
+            --purple: #9b59b6;
+            --green: #27ae60;
+            --orange: #e67e22;
+        }
+
+        body {
+            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+            background-image: radial-gradient(#f5e6a8 1px, transparent 1px);
+            background-size: 20px 20px;
+            overflow-x: hidden;
+            font-size: 16px;
+        }
+
+        /* Responsive Typography */
+        html {
+            font-size: 100%;
+        }
+
+        @media (max-width: 768px) {
+            html {
+                font-size: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            html {
+                font-size: 85%;
+            }
+        }
+
+        /* Header & Navigation */
+        header {
+            background: linear-gradient(135deg, var(--primary-gold) 0%, var(--secondary-gold) 100%);
+            color: var(--white);
+            padding: 0.8rem 0;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid var(--dark-gold);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, var(--white), var(--light-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            white-space: nowrap;
+        }
+
+        .logo-img {
+            height: 45px;
+            width: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            border: 2px solid var(--light-gold);
+            background-color: var(--white);
+            padding: 3px;
+        }
+
+        @media (max-width: 768px) {
+            .logo-img {
+                height: 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-img {
+                height: 35px;
+            }
+        }
+
+        .logo-text {
+            display: inline;
+        }
+
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: none;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            color: var(--white);
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.2rem;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        nav a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: var(--light-gold);
+            transition: width 0.3s;
+        }
+
+        nav a:hover:after {
+            width: 70%;
+        }
+
+        .cart-icon {
+            position: relative;
+            cursor: pointer;
+            font-size: 1.3rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 45px;
+            min-height: 45px;
+        }
+
+        .cart-icon:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+
+        .cart-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #ff4757;
+            color: var(--white);
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 1.5rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Hero Section - Responsive */
+        .hero {
+            background: linear-gradient(rgba(86, 171, 220, 0.85), rgba(56, 140, 190, 0.9)),
+                        url('https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 1rem;
+            margin: 1.5rem 1rem;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px var(--shadow);
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+            line-height: 1.3;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: var(--light-gold);
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        /* New: Category Grid Section */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2.5rem 0;
+            padding: 0 0.5rem;
+        }
+
+        .category-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: var(--transition);
+            position: relative;
+            height: 280px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            border: 3px solid transparent;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border-color: var(--primary-gold);
+        }
+
+        .category-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: linear-gradient(45deg, #f5e6a8, var(--background-gold));
+        }
+
+        .category-info {
+            padding: 1.2rem;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .category-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .category-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.4;
+        }
+
+        /* Category Specific Colors */
+        .category-baby-boy {
+            border-top: 5px solid var(--baby-blue);
+        }
+        
+        .category-baby-boy .category-title {
+            color: var(--baby-blue);
+        }
+
+        .category-baby-girl {
+            border-top: 5px solid var(--baby-pink);
+        }
+        
+        .category-baby-girl .category-title {
+            color: var(--baby-pink);
+        }
+
+        .category-others {
+            border-top: 5px solid var(--purple);
+        }
+        
+        .category-others .category-title {
+            color: var(--purple);
+        }
+
+        .category-about {
+            border-top: 5px solid var(--orange);
+        }
+        
+        .category-about .category-title {
+            color: var(--orange);
+        }
+
+        .category-contact {
+            border-top: 5px solid var(--green);
+        }
+        
+        .category-contact .category-title {
+            color: var(--green);
+        }
+
+        /* New: Quick Cart Widget */
+        .quick-cart-widget {
+            background: linear-gradient(135deg, var(--primary-gold), var(--secondary-gold));
+            color: var(--white);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+            position: relative;
+            overflow: hidden;
+            border: 3px solid var(--light-gold);
+        }
+
+        .quick-cart-widget:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1;
+        }
+
+        .cart-widget-content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1rem;
+        }
+
+        .cart-widget-icon {
+            font-size: 3.5rem;
+            color: var(--light-gold);
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            margin-bottom: 0.5rem;
+        }
+
+        .cart-widget-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .cart-widget-count {
+            font-size: 1.2rem;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            display: inline-block;
+        }
+
+        .cart-widget-btn {
+            background: var(--white);
+            color: var(--dark-gold);
+            border: none;
+            padding: 0.9rem 2rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin-top: 0.5rem;
+        }
+
+        .cart-widget-btn:hover {
+            background: var(--light-gold);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Products Grid - Responsive */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px var(--shadow);
+            transition: var(--transition);
+            border: 1px solid #f5e6a8;
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(212, 175, 55, 0.25);
+        }
+
+        .product-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-gold), var(--light-gold), var(--primary-gold));
+        }
+
+        .product-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background: linear-gradient(45deg, #f5e6a8, var(--background-gold));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary-gold);
+            font-size: 3rem;
+            flex-shrink: 0;
+        }
+
+        .product-info {
+            padding: 1.2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--dark-gold);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            min-height: 3rem;
+        }
+
+        .product-name i {
+            color: var(--primary-gold);
+            font-size: 1.1rem;
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            color: var(--primary-gold);
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .add-to-cart-btn {
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary-gold), var(--secondary-gold));
+            color: var(--white);
+            border: none;
+            padding: 0.9rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+            margin-top: auto;
+        }
+
+        .add-to-cart-btn:hover {
+            background: linear-gradient(135deg, var(--secondary-gold), var(--dark-gold));
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+        }
+
+        /* About & Contact Sections - Responsive */
+        .section {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px var(--shadow);
+            margin-bottom: 1.5rem;
+            border: 1px solid #f5e6a8;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary-gold), var(--light-gold), var(--primary-gold));
+        }
+
+        .section h2 {
+            color: var(--dark-gold);
+            margin-bottom: 1.2rem;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .section h2 i {
+            color: var(--primary-gold);
+            font-size: 1.5rem;
+        }
+
+        /* Cart Sidebar - Mobile Friendly */
+        .cart-sidebar {
+            position: fixed;
+            right: -100%;
+            top: 0;
+            width: 100%;
+            max-width: 450px;
+            height: 100%;
+            background: var(--white);
+            box-shadow: -5px 0 25px rgba(0,0,0,0.2);
+            transition: right 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            z-index: 2000;
+            overflow-y: auto;
+            border-left: 5px solid var(--primary-gold);
+        }
+
+        .cart-sidebar.open {
+            right: 0;
+        }
+
+        .cart-header {
+            background: linear-gradient(135deg, var(--primary-gold), var(--secondary-gold));
+            color: var(--white);
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        .cart-close {
+            font-size: 2rem;
+            cursor: pointer;
+            transition: var(--transition);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .cart-close:hover {
+            background: rgba(255,255,255,0.2);
+            transform: rotate(90deg);
+        }
+
+        .cart-items {
+            padding: 1.2rem;
+        }
+
+        .cart-item {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            border-bottom: 1px solid #f0f0f0;
+            transition: var(--transition);
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+
+        .cart-item:hover {
+            background: #fffdf5;
+        }
+
+        .cart-item-image {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #f5e6a8;
+            flex-shrink: 0;
+        }
+
+        .cart-item-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .cart-item-name {
+            font-weight: bold;
+            color: var(--dark-gold);
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            word-wrap: break-word;
+        }
+
+        .cart-item-price {
+            color: var(--primary-gold);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .remove-btn {
+            background: #ff6b6b;
+            color: var(--white);
+            border: none;
+            padding: 0.4rem 0.8rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .remove-btn:hover {
+            background: #ff4757;
+            transform: scale(1.05);
+        }
+
+        .cart-total {
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #fff8e1, #fff3cd);
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--dark-gold);
+            border-top: 3px solid var(--primary-gold);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            bottom: 0;
+        }
+
+        .checkout-btn {
+            width: calc(100% - 2rem);
+            margin: 1rem;
+            display: block;
+            background: linear-gradient(135deg, #27ae60, #229954);
+            color: var(--white);
+            border: none;
+            padding: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: var(--transition);
+            box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            position: sticky;
+            bottom: 1rem;
+        }
+
+        .checkout-btn:hover {
+            background: linear-gradient(135deg, #229954, #1e8449);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(39, 174, 96, 0.4);
+        }
+
+        .empty-cart {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        .empty-cart i {
+            font-size: 3rem;
+            color: #f5e6a8;
+            margin-bottom: 1rem;
+        }
+
+        /* Payment Modal - Mobile Friendly */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 3000;
+            overflow-y: auto;
+            backdrop-filter: blur(5px);
+            padding: 1rem;
+        }
+
+        .modal-content {
+            background: var(--white);
+            max-width: 100%;
+            margin: 1rem auto;
+            padding: 1.5rem;
+            border-radius: 12px;
+            position: relative;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            border: 2px solid var(--primary-gold);
+            animation: modalFadeIn 0.5s;
+        }
+
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 2rem;
+            cursor: pointer;
+            color: var(--primary-gold);
+            transition: var(--transition);
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .close-btn:hover {
+            color: var(--dark-gold);
+            background: var(--background-gold);
+            transform: rotate(90deg);
+        }
+
+        /* Admin Panel Styles - Responsive */
+        .admin-btn {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-gold), var(--secondary-gold));
+            color: var(--white);
+            border: none;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+            transition: var(--transition);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            white-space: nowrap;
+        }
+
+        .admin-btn:hover {
+            background: linear-gradient(135deg, var(--secondary-gold), var(--dark-gold));
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 12px 30px rgba(212, 175, 55, 0.5);
+        }
+
+        .tabs {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #f0f0f0;
+            flex-wrap: wrap;
+            overflow-x: auto;
+            padding-bottom: 0.5rem;
+        }
+
+        .tab {
+            padding: 0.8rem 1.2rem;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            transition: var(--transition);
+            font-weight: 600;
+            border-radius: 8px 8px 0 0;
+            position: relative;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+
+        .tab.active {
+            color: var(--primary-gold);
+            background: var(--background-gold);
+        }
+
+        .tab.active:after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--primary-gold);
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .product-list-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            border: 1px solid #f0f0f0;
+            border-radius: 8px;
+            margin-bottom: 0.8rem;
+            transition: var(--transition);
+            background: var(--white);
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .product-list-item:hover {
+            border-color: var(--primary-gold);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.1);
+            transform: translateX(3px);
+        }
+
+        .image-preview {
+            max-width: 150px;
+            max-height: 150px;
+            margin-top: 0.8rem;
+            border-radius: 8px;
+            border: 2px solid #f5e6a8;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .page {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #2c3e50, #1a2530);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-gold), var(--light-gold), var(--primary-gold));
+        }
+
+        footer p {
+            font-size: 1rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .order-summary {
+            background: #fffdf5;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.2rem 0;
+            border: 2px solid #f5e6a8;
+        }
+
+        .order-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.6rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            flex-wrap: wrap;
+        }
+
+        .bkash-info, .nagad-info {
+            background: var(--background-gold);
+            padding: 1.2rem;
+            border-radius: 8px;
+            margin: 1.2rem 0;
+            border-left: 5px solid var(--primary-gold);
+            font-size: 0.9rem;
+        }
+
+        .success-message {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .success-icon {
+            font-size: 4rem;
+            color: #27ae60;
+            margin-bottom: 1.2rem;
+            animation: bounce 1s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+
+        /* Responsive Breakpoints */
+        @media (min-width: 576px) {
+            .hero {
+                padding: 5rem 2rem;
+                margin: 1.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .container {
+                padding: 0 1.5rem;
+            }
+            
+            .category-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 2rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .menu-toggle {
+                display: none;
+            }
+            
+            nav ul {
+                display: flex !important;
+            }
+            
+            .logo {
+                font-size: 1.8rem;
+            }
+            
+            .hero {
+                padding: 6rem 3rem;
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero p {
+                font-size: 1.3rem;
+            }
+            
+            .category-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .products-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 2rem;
+            }
+            
+            .product-image {
+                height: 250px;
+            }
+            
+            .section {
+                padding: 2rem;
+            }
+            
+            .modal-content {
+                padding: 2rem;
+                margin: 2rem auto;
+                max-width: 600px;
+            }
+            
+            .cart-widget-content {
+                flex-direction: row;
+                text-align: left;
+                justify-content: space-between;
+            }
+            
+            .cart-widget-icon {
+                font-size: 4rem;
+                margin-bottom: 0;
+            }
+        }
+
+        @media (min-width: 992px) {
+            nav {
+                padding: 0 2rem;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+            
+            .category-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .products-grid {
+                grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            }
+            
+            .container {
+                padding: 0 2rem;
+            }
+        }
+
+        @media (max-width: 767px) {
+            /* Mobile Navigation */
+            .menu-toggle {
+                display: block;
+            }
+            
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: linear-gradient(135deg, var(--primary-gold), var(--secondary-gold));
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+                border-top: 3px solid var(--dark-gold);
+            }
+            
+            nav ul.active {
+                display: flex;
+            }
+            
+            nav ul li {
+                width: 100%;
+            }
+            
+            nav a {
+                display: block;
+                padding: 1rem;
+                border-radius: 8px;
+                text-align: center;
+            }
+            
+            /* Adjust cart icon position */
+            .cart-icon {
+                margin-left: auto;
+                margin-right: 1rem;
+            }
+            
+            /* Adjust logo for mobile */
+            .logo-text {
+                font-size: 1.2rem;
+            }
+            
+            /* Adjust category cards */
+            .category-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                padding: 0;
+            }
+            
+            .category-card {
+                height: 250px;
+            }
+            
+            .category-image {
+                height: 150px;
+            }
+            
+            /* Adjust product cards */
+            .product-card {
+                max-width: 100%;
+            }
+            
+            /* Adjust admin button */
+            .admin-btn {
+                padding: 0.8rem 1.2rem;
+                font-size: 0.9rem;
+                bottom: 1rem;
+                right: 1rem;
+            }
+            
+            /* Adjust modal padding */
+            .modal-content {
+                padding: 1.2rem;
+                margin: 0.5rem;
+            }
+            
+            /* Make checkout items scrollable on mobile */
+            .cart-items {
+                max-height: 60vh;
+                overflow-y: auto;
+            }
+            
+            /* Quick cart widget mobile */
+            .quick-cart-widget {
+                padding: 1.2rem;
+                margin: 1.5rem 0;
+            }
+            
+            .cart-widget-title {
+                font-size: 1.5rem;
+            }
+            
+            .cart-widget-btn {
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 3rem 1rem;
+                margin: 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .category-card {
+                height: 230px;
+            }
+            
+            .category-image {
+                height: 130px;
+            }
+            
+            .category-title {
+                font-size: 1.1rem;
+            }
+            
+            .product-name {
+                font-size: 1.1rem;
+            }
+            
+            .product-price {
+                font-size: 1.3rem;
+            }
+            
+            .add-to-cart-btn {
+                padding: 0.8rem;
+                font-size: 0.9rem;
+            }
+            
+            .cart-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .cart-item-image {
+                width: 100%;
+                height: 150px;
+            }
+            
+            .admin-btn span {
+                display: none;
+            }
+            
+            .admin-btn i {
+                margin: 0;
+            }
+            
+            .admin-btn {
+                width: 50px;
+                height: 50px;
+                padding: 0;
+                justify-content: center;
+                border-radius: 50%;
+            }
+            
+            .cart-widget-icon {
+                font-size: 3rem;
+            }
+            
+            .cart-widget-title {
+                font-size: 1.3rem;
+            }
+        }
+
+        /* Touch-friendly improvements */
+        @media (hover: none) and (pointer: coarse) {
+            .add-to-cart-btn,
+            .btn,
+            .checkout-btn,
+            .remove-btn,
+            .tab,
+            .payment-option,
+            .category-card,
+            .cart-widget-btn {
+                min-height: 44px;
+                min-width: 44px;
+            }
+            
+            input,
+            select,
+            textarea {
+                font-size: 16px !important; /* Prevents zoom on iOS */
+            }
+            
+            .cart-icon {
+                min-width: 44px;
+                min-height: 44px;
+            }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--background-gold);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, var(--primary-gold), var(--secondary-gold));
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, var(--secondary-gold), var(--dark-gold));
+        }
+
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+        
+        .mb-1 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .mb-2 {
+            margin-bottom: 1rem;
+        }
+        
+        .mb-3 {
+            margin-bottom: 1.5rem;
+        }
+        
+        .mt-1 {
+            margin-top: 0.5rem;
+        }
+        
+        .mt-2 {
+            margin-top: 1rem;
+        }
+        
+        .mt-3 {
+            margin-top: 1.5rem;
+        }
+        
+        .d-flex {
+            display: flex;
+        }
+        
+        .flex-column {
+            flex-direction: column;
+        }
+        
+        .align-items-center {
+            align-items: center;
+        }
+        
+        .justify-content-center {
+            justify-content: center;
+        }
+        
+        .justify-content-between {
+            justify-content: space-between;
+        }
+        
+        .w-100 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="ARFANUR COLLECTION Logo" class="logo-img">
+                <span class="logo-text">ARFANUR COLLECTION</span>
+            </div>
+            
+            <button class="menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul id="mobileMenu">
+                <li><a href="#" data-page="home"><i class="fas fa-home"></i> হোম</a></li>
+                <li><a href="#" data-page="babyBoy"><i class="fas fa-child"></i> বেবি বয়</a></li>
+                <li><a href="#" data-page="babyGirl"><i class="fas fa-female"></i> বেবি গার্ল</a></li>
+                <li><a href="#" data-page="others"><i class="fas fa-tshirt"></i> অন্যান্য</a></li>
+                <li><a href="#" data-page="about"><i class="fas fa-info-circle"></i> আমাদের সম্পর্কে</a></li>
+                <li><a href="#" data-page="contact"><i class="fas fa-address-book"></i> যোগাযোগ</a></li>
+                <li>
+                    <div class="cart-icon" onclick="toggleCart()">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge" id="cartBadge">0</span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <div class="hero">
+            <h1>স্বাগতম <span class="highlight">ARFANUR COLLECTION</span>-এ</h1>
+            <p>আপনার আদরের সোনামণির জন্য প্রিমিয়াম কোয়ালিটির আরামদায়ক ও ফ্যাশনেবল বেবি পোশাক</p>
+        </div>
+        
+        <div class="container">
+            <h2 class="text-center mb-3" style="color: var(--dark-gold);">
+                <i class="fas fa-heart"></i> আমাদের সেরা পোশাক সংগ্রহ
+            </h2>
+            
+            <!-- New Category Grid Section -->
+            <div class="category-grid">
+                <!-- Baby Boy Category -->
+                <div class="category-card category-baby-boy" onclick="navigateToPage('babyBoy')">
+                    <img src="https://images.unsplash.com/photo-1594736797933-d0d2bfe8f5d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="বেবি বয় পোশাক" class="category-image">
+                    <div class="category-info">
+                        <div class="category-title">
+                            <i class="fas fa-child"></i>
+                            <span>বেবি বয় পোশাক</span>
+                        </div>
+                        <p class="category-desc">আপনার ছোট রাজকুমারের জন্য প্রিমিয়াম কোয়ালিটির পোশাক</p>
+                    </div>
+                </div>
+                
+                <!-- Baby Girl Category -->
+                <div class="category-card category-baby-girl" onclick="navigateToPage('babyGirl')">
+                    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="বেবি গার্ল পোশাক" class="category-image">
+                    <div class="category-info">
+                        <div class="category-title">
+                            <i class="fas fa-female"></i>
+                            <span>বেবি গার্ল পোশাক</span>
+                        </div>
+                        <p class="category-desc">আপনার ছোট রাজকন্যার জন্য সুন্দর ও রঙিন পোশাক</p>
+                    </div>
+                </div>
+                
+                <!-- Other Products Category -->
+                <div class="category-card category-others" onclick="navigateToPage('others')">
+                    <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="অন্যান্য পণ্য" class="category-image">
+                    <div class="category-info">
+                        <div class="category-title">
+                            <i class="fas fa-tshirt"></i>
+                            <span>অন্যান্য পণ্য</span>
+                        </div>
+                        <p class="category-desc">বিভিন্ন ধরনের ফ্যাশনেবল ও ইউনিক পণ্যের সমাহার</p>
+                    </div>
+                </div>
+                
+                <!-- About Us Category -->
+                <div class="category-card category-about" onclick="navigateToPage('about')">
+                    <img src="https://images.unsplash.com/photo-1560073744-7643b964ca61?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="আমাদের সম্পর্কে" class="category-image">
+                    <div class="category-info">
+                        <div class="category-title">
+                            <i class="fas fa-info-circle"></i>
+                            <span>আমাদের সম্পর্কে</span>
+                        </div>
+                        <p class="category-desc">আমাদের প্রতিষ্ঠান ও সেবা সম্পর্কে জানুন</p>
+                    </div>
+                </div>
+                
+                <!-- Contact Us Category -->
+                <div class="category-card category-contact" onclick="navigateToPage('contact')">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="যোগাযোগ করুন" class="category-image">
+                    <div class="category-info">
+                        <div class="category-title">
+                            <i class="fas fa-address-book"></i>
+                            <span>যোগাযোগ করুন</span>
+                        </div>
+                        <p class="category-desc">আমাদের সাথে যোগাযোগ করার সব উপায়</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- New Quick Cart Widget -->
+            <div class="quick-cart-widget">
+                <div class="cart-widget-content">
+                    <div class="d-flex align-items-center">
+                        <div class="cart-widget-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div style="margin-left: 1rem;">
+                            <h3 class="cart-widget-title">আপনার কার্ট</h3>
+                            <div class="cart-widget-count" id="cartWidgetCount">
+                                <i class="fas fa-box"></i> 
+                                <span id="cartItemCount">0</span> আইটেম
+                            </div>
+                        </div>
+                    </div>
+                    <button class="cart-widget-btn" onclick="toggleCart()">
+                        <i class="fas fa-shopping-bag"></i>
+                        কার্ট দেখুন
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Featured Products Section -->
+            <h2 class="text-center mb-3" style="color: var(--dark-gold);">
+                <i class="fas fa-star"></i> জনপ্রিয় পণ্য
+            </h2>
+            <div class="products-grid" id="productsGrid"></div>
+        </div>
+    </div>
+
+    <!-- Baby Boy Dresses Page -->
+    <div id="babyBoy" class="page">
+        <div class="hero">
+            <h1>বেবি বয় পোশাক কালেকশন</h1>
+            <p>আপনার ছোট রাজকুমারের জন্য প্রিমিয়াম কোয়ালিটির সুন্দর ও আরামদায়ক পোশাক</p>
+        </div>
+        
+        <div class="container">
+            <h2 class="text-center mb-3" style="color: var(--baby-blue);">
+                <i class="fas fa-child"></i> বেবি বয় পোশাক
+            </h2>
+            <div class="products-grid" id="babyBoyGrid"></div>
+        </div>
+    </div>
+
+    <!-- Baby Girl Dresses Page -->
+    <div id="babyGirl" class="page">
+        <div class="hero">
+            <h1>বেবি গার্ল পোশাক কালেকশন</h1>
+            <p>আপনার ছোট রাজকন্যার জন্য রঙিন, সুন্দর ও আরামদায়ক পোশাক</p>
+        </div>
+        
+        <div class="container">
+            <h2 class="text-center mb-3" style="color: var(--baby-pink);">
+                <i class="fas fa-female"></i> বেবি গার্ল পোশাক
+            </h2>
+            <div class="products-grid" id="babyGirlGrid"></div>
+        </div>
+    </div>
+
+    <!-- Others Page -->
+    <div id="others" class="page">
+        <div class="hero">
+            <h1>অন্যান্য পণ্য</h1>
+            <p>বিভিন্ন ধরনের ফ্যাশনেবল ও ইউনিক পোশাকের সমাহার</p>
+        </div>
+        
+        <div class="container">
+            <h2 class="text-center mb-3" style="color: var(--purple);">
+                <i class="fas fa-boxes"></i> অন্যান্য পণ্য
+            </h2>
+            <div class="products-grid" id="othersGrid"></div>
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+        <div class="container">
+            <div class="section">
+                <h2><i class="fas fa-history"></i> আমাদের সম্পর্কে</h2>
+                <div id="aboutContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <div class="container">
+            <div class="section">
+                <h2><i class="fas fa-phone-alt"></i> যোগাযোগ করুন</h2>
+                <div id="contactContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2><i class="fas fa-shopping-cart"></i> আপনার কার্ট</h2>
+            <span class="cart-close" onclick="toggleCart()">&times;</span>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-total" id="cartTotal"></div>
+        <button class="checkout-btn" onclick="openCheckout()">
+            <i class="fas fa-lock"></i> চেকআউট করুন
+        </button>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div id="checkoutModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeCheckout()">&times;</span>
+            <h2 class="mb-2" style="color: var(--dark-gold);">
+                <i class="fas fa-cash-register"></i> চেকআউট
+            </h2>
+            
+            <div class="order-summary">
+                <h3 style="color: var(--dark-gold); margin-bottom: 1rem;">
+                    <i class="fas fa-clipboard-list"></i> অর্ডার সামারি
+                </h3>
+                <div id="checkoutItems"></div>
+                <div class="mt-2 pt-2" style="border-top: 3px solid var(--primary-gold);">
+                    <div class="order-item" style="font-size: 1.3rem; font-weight: bold; color: var(--dark-gold);">
+                        <span><i class="fas fa-coins"></i> মোট</span>
+                        <span id="checkoutTotal"></span>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="mt-3" style="color: var(--dark-gold);">
+                <i class="fas fa-truck"></i> ডেলিভারি তথ্য
+            </h3>
+            <form id="deliveryForm">
+                <div class="form-group">
+                    <label><i class="fas fa-user"></i> নাম *</label>
+                    <input type="text" id="customerName" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-phone"></i> মোবাইল নম্বর *</label>
+                    <input type="tel" id="customerPhone" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-map-marker-alt"></i> ঠিকানা *</label>
+                    <textarea id="customerAddress" required></textarea>
+                </div>
+
+                <h3 class="mt-3" style="color: var(--dark-gold);">
+                    <i class="fas fa-credit-card"></i> পেমেন্ট পদ্ধতি নির্বাচন করুন
+                </h3>
+                <div class="payment-options" id="paymentOptions">
+                    <div class="payment-option" onclick="selectPayment('cod')">
+                        <div class="payment-icon">💵</div>
+                        <div>
+                            <strong>ক্যাশ অন ডেলিভারি</strong>
+                            <p style="font-size: 0.85rem; color: var(--text-light);">পণ্য পাওয়ার সময় টাকা পরিশোধ করুন</p>
+                        </div>
+                    </div>
+
+                    <div class="payment-option" onclick="selectPayment('bkash')">
+                        <div class="payment-icon">📱</div>
+                        <div>
+                            <strong>bKash</strong>
+                            <p style="font-size: 0.85rem; color: var(--text-light);">মোবাইল ব্যাংকিং এর মাধ্যমে পেমেন্ট</p>
+                        </div>
+                    </div>
+
+                    <div class="payment-option" onclick="selectPayment('nagad')">
+                        <div class="payment-icon">💳</div>
+                        <div>
+                            <strong>Nagad</strong>
+                            <p style="font-size: 0.85rem; color: var(--text-light);">মোবাইল ব্যাংকিং এর মাধ্যমে পেমেন্ট</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Details -->
+                <div id="codDetails" class="payment-details">
+                    <p><i class="fas fa-check-circle"></i> আপনার অর্ডার কনফার্ম করুন। পণ্য ডেলিভারির সময় টাকা পরিশোধ করবেন।</p>
+                </div>
+
+                <div id="bkashDetails" class="payment-details">
+                    <div class="bkash-info">
+                        <strong><i class="fas fa-mobile-alt"></i> bKash পেমেন্ট করতে:</strong>
+                        <p>1. bKash অ্যাপে "Send Money" সিলেক্ট করুন</p>
+                        <p>2. এই নম্বরে টাকা পাঠান: <strong>01712-345678</strong></p>
+                        <p>3. নিচে Transaction ID লিখুন</p>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-receipt"></i> bKash Transaction ID *</label>
+                        <input type="text" id="bkashTrxId" placeholder="যেমন: 8NK2A1B3CD">
+                    </div>
+                </div>
+
+                <div id="nagadDetails" class="payment-details">
+                    <div class="nagad-info">
+                        <strong><i class="fas fa-wallet"></i> Nagad পেমেন্ট করতে:</strong>
+                        <p>1. Nagad অ্যাপে "Send Money" সিলেক্ট করুন</p>
+                        <p>2. এই নম্বরে টাকা পাঠান: <strong>01812-345678</strong></p>
+                        <p>3. নিচে Transaction ID লিখুন</p>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-receipt"></i> Nagad Transaction ID *</label>
+                        <input type="text" id="nagadTrxId" placeholder="যেমন: NAG123456789">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-success w-100 mt-2">
+                    <i class="fas fa-check-circle"></i> অর্ডার কনফার্ম করুন
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Order Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="success-message">
+                <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+                <h2 style="color: #27ae60;">অর্ডার সফল হয়েছে!</h2>
+                <p>আপনার অর্ডার সফলভাবে সম্পন্ন হয়েছে।</p>
+                <p>আমরা শীঘ্রই আপনার সাথে যোগাযোগ করব।</p>
+                <p class="mt-2" style="font-size: 1.1rem;">
+                    <strong><i class="fas fa-hashtag"></i> অর্ডার নম্বর:</strong> 
+                    <span id="orderNumber" style="color: var(--primary-gold); font-weight: bold;"></span>
+                </p>
+                <button class="btn btn-success mt-3" onclick="closeSuccess()">
+                    <i class="fas fa-thumbs-up"></i> ধন্যবাদ
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Panel -->
+    <div id="adminModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeAdmin()">&times;</span>
+            <h2 style="color: var(--dark-gold); margin-bottom: 1.5rem;">
+                <i class="fas fa-user-shield"></i> Admin Panel - ARFANUR COLLECTION
+            </h2>
+            
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab('products')">
+                    <i class="fas fa-star"></i> বিশেষ পণ্য
+                </button>
+                <button class="tab" onclick="switchTab('babyBoyAdmin')">
+                    <i class="fas fa-child"></i> বেবি বয়
+                </button>
+                <button class="tab" onclick="switchTab('babyGirlAdmin')">
+                    <i class="fas fa-female"></i> বেবি গার্ল
+                </button>
+                <button class="tab" onclick="switchTab('othersAdmin')">
+                    <i class="fas fa-tshirt"></i> অন্যান্য
+                </button>
+                <button class="tab" onclick="switchTab('orders')">
+                    <i class="fas fa-clipboard-list"></i> অর্ডার
+                </button>
+                <button class="tab" onclick="switchTab('aboutEdit')">
+                    <i class="fas fa-info-circle"></i> About
+                </button>
+                <button class="tab" onclick="switchTab('contactEdit')">
+                    <i class="fas fa-address-book"></i> Contact
+                </button>
+            </div>
+
+            <!-- Special Products Tab -->
+            <div id="products" class="tab-content active">
+                <h3 style="color: var(--dark-gold); margin-bottom: 1rem;">
+                    <i class="fas fa-plus-circle"></i> নতুন বিশেষ পণ্য যোগ করুন
+                </h3>
+                <form id="productForm">
+                    <div class="form-group">
+                        <label><i class="fas fa-tag"></i> প্রোডাক্টের নাম</label>
+                        <input type="text" id="productName" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-money-bill-wave"></i> মূল্য (টাকা)</label>
+                        <input type="number" id="productPrice" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-image"></i> ছবি URL</label>
+                        <input type="text" id="productImageUrl" placeholder="ছবির লিংক দিন" required>
+                    </div>
+                    <button type="submit" class="btn w-100">
+                        <i class="fas fa-plus"></i> পণ্য যোগ করুন
+                    </button>
+                </form>
+
+                <h3 class="mt-3" style="color: var(--dark-gold); margin-bottom: 1rem;">
+                    <i class="fas fa-list"></i> সকল বিশেষ পণ্য
+                </h3>
+                <div id="productsList"></div>
+            </div>
+
+            <!-- Baby Boy Products Tab -->
+            <div id="babyBoyAdmin" class="tab-content">
+                <h3 style="color: #36a1d8; margin-bottom: 1rem;">
+                    <i class="fas fa-plus-circle"></i> নতুন বেবি বয় পোশাক যোগ করুন
+                </h3>
+                <form id="babyBoyForm">
+                    <div class="form-group">
+                        <label><i class="fas fa-tag"></i> পোশাকের নাম</label>
+                        <input type="text" id="babyBoyName" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-money-bill-wave"></i> মূল্য (টাকা)</label>
+                        <input type="number" id="babyBoyPrice" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-image"></i> ছবি URL</label>
+                        <input type="text" id="babyBoyImageUrl" placeholder="ছবির লিংক দিন" required>
+                    </div>
+                    <button type="submit" class="btn w-100" style="background: linear-gradient(135deg, #36a1d8, #1e6fa8);">
+                        <i class="fas fa-plus"></i> পোশাক যোগ করুন
+                    </button>
+                </form>
+
+                <h3 class="mt-3" style="color: #36a1d8; margin-bottom: 1rem;">
+                    <i class="fas fa-list"></i> সকল বেবি বয় পোশাক
+                </h3>
+                <div id="babyBoyList"></div>
+            </div>
+
+            <!-- Baby Girl Products Tab -->
+            <div id="babyGirlAdmin" class="tab-content">
+                <h3 style="color: #ff69b4; margin-bottom: 1rem;">
+                    <i class="fas fa-plus-circle"></i> নতুন বেবি গার্ল পোশাক যোগ করুন
+                </h3>
+                <form id="babyGirlForm">
+                    <div class="form-group">
+                        <label><i class="fas fa-tag"></i> পোশাকের নাম</label>
+                        <input type="text" id="babyGirlName" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-money-bill-wave"></i> মূল্য (টাকা)</label>
+                        <input type="number" id="babyGirlPrice" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-image"></i> ছবি URL</label>
+                        <input type="text" id="babyGirlImageUrl" placeholder="ছবির লিংক দিন" required>
+                    </div>
+                    <button type="submit" class="btn w-100" style="background: linear-gradient(135deg, #ff69b4, #e91e63);">
+                        <i class="fas fa-plus"></i> পোশাক যোগ করুন
+                    </button>
+                </form>
+
+                <h3 class="mt-3" style="color: #ff69b4; margin-bottom: 1rem;">
+                    <i class="fas fa-list"></i> সকল বেবি গার্ল পোশাক
+                </h3>
+                <div id="babyGirlList"></div>
+            </div>
+
+            <!-- Others Products Tab -->
+            <div id="othersAdmin" class="tab-content">
+                <h3 style="color: #9b59b6; margin-bottom: 1rem;">
+                    <i class="fas fa-plus-circle"></i> নতুন অন্যান্য প্রোডাক্ট যোগ করুন
+                </h3>
+                <form id="othersForm">
+                    <div class="form-group">
+                        <label><i class="fas fa-tag"></i> প্রোডাক্টের নাম</label>
+                        <input type="text" id="othersName" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-money-bill-wave"></i> মূল্য (টাকা)</label>
+                        <input type="number" id="othersPrice" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-image"></i> ছবি URL</label>
+                        <input type="text" id="othersImageUrl" placeholder="ছবির লিংক দিন" required>
+                    </div>
+                    <button type="submit" class="btn w-100" style="background: linear-gradient(135deg, #9b59b6, #6a1b9a);">
+                        <i class="fas fa-plus"></i> প্রোডাক্ট যোগ করুন
+                    </button>
+                </form>
+
+                <h3 class="mt-3" style="color: #9b59b6; margin-bottom: 1rem;">
+                    <i class="fas fa-list"></i> সকল অন্যান্য প্রোডাক্ট
+                </h3>
+                <div id="othersList"></div>
+            </div>
+
+            <!-- Orders Tab -->
+            <div id="orders" class="tab-content">
+                <h3 style="color: var(--dark-gold); margin-bottom: 1rem;">
+                    <i class="fas fa-shopping-bag"></i> সকল অর্ডার
+                </h3>
+                <div id="ordersList">
+                    <!-- Orders will appear here -->
+                </div>
+            </div>
+
+            <!-- About Edit Tab -->
+            <div id="aboutEdit" class="tab-content">
+                <h3 style="color: var(--dark-gold); margin-bottom: 1rem;">
+                    <i class="fas fa-edit"></i> About পেজ এডিট করুন
+                </h3>
+                <form id="aboutForm">
+                    <div class="form-group">
+                        <label><i class="fas fa-file-alt"></i> About কন্টেন্ট</label>
+                        <textarea id="aboutText" rows="8" placeholder="আপনার দোকান সম্পর্কে লিখুন..."></textarea>
+                    </div>
+                    <button type="submit" class="btn w-100">
+                        <i class="fas fa-save"></i> সেভ করুন
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Edit Tab -->
+            <div id="contactEdit" class="tab-content">
+                <h3 style="color: var(--dark-gold); margin-bottom: 1rem;">
+                    <i class="fas fa-edit"></i> Contact পেজ এডিট করুন
+                </h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label><i class="fas fa-file-alt"></i> Contact কন্টেন্ট</label>
+                        <textarea id="contactText" rows="8" placeholder="যোগাযোগের তথ্য লিখুন..."></textarea>
+                    </div>
+                    <button type="submit" class="btn w-100">
+                        <i class="fas fa-save"></i> সেভ করুন
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Button -->
+    <button class="admin-btn" onclick="checkPassword()">
+        <i class="fas fa-cog"></i>
+        <span>Admin</span>
+    </button>
+
+    <!-- Direct Admin Access Button (Temporary) -->
+    <button onclick="openAdminDirectly()" style="
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        background: #27ae60;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1000;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    ">
+        <i class="fas fa-user-cog"></i> Direct Admin
+    </button>
+
+    <footer>
+        <p>&copy; ২০২৫ ARFANUR COLLECTION। সর্বস্বত্ব সংরক্ষিত।</p>
+        <p class="mt-1" style="font-size: 0.9rem; opacity: 0.8;">
+            <i class="fas fa-map-marker-alt"></i> ১২৩ মেইন রোড, ঢাকা-১২০০ | 
+            <i class="fas fa-phone"></i> +৮৮০ ১৭১২-৩৪৫৬৭৮ | 
+            <i class="fas fa-envelope"></i> info@arfanur-collection.com
+        </p>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle Function
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                const mobileMenu = document.getElementById('mobileMenu');
+                if (mobileMenu.classList.contains('active')) {
+                    mobileMenu.classList.remove('active');
+                }
+            });
+        });
+
+        // Data Storage
+        const ADMIN_PASSWORD = "admin123";
+        
+        // Special Products (Featured on Home)
+        let products = [
+            { id: 1, name: 'প্রিমিয়াম বেবি বেডশিট', price: 1500, image: 'https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-bed' },
+            { id: 2, name: 'বেবি উষ্ণ কোট', price: 2500, image: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-snowflake' },
+            { id: 3, name: 'বেবি হুডেড টাওয়েল', price: 1200, image: 'https://images.unsplash.com/photo-1588854337236-6889d631faa8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-bath' },
+            { id: 4, name: 'বেবি সুতি পাজামা', price: 900, image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-moon' },
+            { id: 5, name: 'বেবি পার্টি ড্রেস', price: 3500, image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-glass-cheers' },
+            { id: 6, name: 'বেবি উলেন সোয়েটার', price: 1800, image: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-tshirt' }
+        ];
+
+        // Baby Boy Dresses
+        let babyBoyProducts = [
+            { id: 101, name: 'নীল স্যুটসেট', price: 1200, image: 'https://images.unsplash.com/photo-1594736797933-d0d2bfe8f5d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-child' },
+            { id: 102, name: 'সাদা শার্ট ও প্যান্ট', price: 950, image: 'https://images.unsplash.com/photo-1592494800351-43c4a9c629e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-tshirt' },
+            { id: 103, name: 'ট্রেডিশনাল পাঞ্জাবি', price: 1500, image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-vest' },
+            { id: 104, name: 'ডেনিম জ্যাকেট', price: 1800, image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-jacket' },
+            { id: 105, name: 'স্পোর্টস ওয়্যার', price: 1100, image: 'https://images.unsplash.com/photo-1519241047957-be31d7379a5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-running' },
+            { id: 106, name: 'ফরমাল কোট', price: 2200, image: 'https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-user-tie' }
+        ];
+
+        // Baby Girl Dresses
+        let babyGirlProducts = [
+            { id: 201, name: 'গোলাপি ফ্রক', price: 1300, image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-female' },
+            { id: 202, name: 'ফ্লোরাল ড্রেস', price: 1400, image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-leaf' },
+            { id: 203, name: 'প্রিন্সেস গাউন', price: 2500, image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-crown' },
+            { id: 204, name: 'জিনস ও টপ', price: 1600, image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-tshirt' },
+            { id: 205, name: 'সাদা পোশাক', price: 1200, image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-star' },
+            { id: 206, name: 'পার্টি ড্রেস', price: 2800, image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-glass-cheers' }
+        ];
+
+        // Other Products
+        let otherProducts = [
+            { id: 301, name: 'বেবি ব্যাগ ও ডায়াপার ব্যাগ', price: 800, image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-shopping-bag' },
+            { id: 302, name: 'বেবি শীতের সেট', price: 3500, image: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-snowflake' },
+            { id: 303, name: 'বেবি স্যান্ডেল ও জুতা', price: 1200, image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-shoe-prints' },
+            { id: 304, name: 'বেবি খেলনা ও অ্যাক্সেসরি', price: 1500, image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-gamepad' },
+            { id: 305, name: 'বেবি ক্যাপ ও হ্যাট', price: 600, image: 'https://images.unsplash.com/photo-1521369909029-2afed882baee?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-hat-cowboy' },
+            { id: 306, name: 'বেবি বাথ টয় ও তোয়ালে', price: 1800, image: 'https://images.unsplash.com/photo-1588854337236-6889d631faa8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', icon: 'fas fa-bath' }
+        ];
+
+        let cart = [];
+        let orders = [];
+        let selectedPayment = 'cod';
+
+        let aboutText = `<p><i class="fas fa-baby" style="color:#d4af37;"></i> <strong>ARFANUR COLLECTION</strong> একটি বিশ্বস্ত বেবি পোশাকের ব্র্যান্ড। আমরা ১০ বছরেরও বেশি সময় ধরে শিশুদের জন্য আরামদায়ক ও ফ্যাশনেবল পোশাক তৈরি করছি।</p>
+<p><i class="fas fa-award" style="color:#d4af37;"></i> আমাদের প্রতিটি পোশাক শিশুর ত্বকের জন্য নিরাপদ ও আরামদায়ক। আমরা সেরা কোয়ালিটির সুতি ও অন্যান্য ফেব্রিক ব্যবহার করি।</p>
+<p><i class="fas fa-check-circle" style="color:#d4af37;"></i> আমাদের বিশেষত্ব: শিশুর ত্বকের জন্য উপযোগী, সহজে পরিষ্কারযোগ্য, টেকসই, এবং অ্যালার্জি প্রতিরোধী পোশাক।</p>`;
+
+        let contactText = `<p><i class="fas fa-map-marker-alt" style="color:#d4af37;"></i> <strong>ঠিকানা:</strong> ১২৩ মেইন রোড, ঢাকা-১২০০</p>
+<p><i class="fas fa-phone" style="color:#d4af37;"></i> <strong>ফোন:</strong> +৮৮০ ১৭১২-৩৪৫৬৭৮</p>
+<p><i class="fas fa-envelope" style="color:#d4af37;"></i> <strong>ইমেইল:</strong> info@arfanur-collection.com</p>
+<p><i class="fas fa-clock" style="color:#d4af37;"></i> <strong>সময়:</strong> সকাল ১০টা - রাত ৮টা (প্রতিদিন)</p>
+<p><i class="fas fa-comments" style="color:#d4af37;"></i> <strong>কাস্টমার সার্ভিস:</strong> ২৪/৭ হেল্পলাইন: ১৬৫৪৫</p>`;
+
+        // Page Navigation
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pageName = this.getAttribute('data-page');
+                navigateToPage(pageName);
+            });
+        });
+
+        // Navigate to Page Function
+        function navigateToPage(pageName) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            document.getElementById(pageName).classList.add('active');
+            
+            // Load specific products for each page
+            if (pageName === 'babyBoy') {
+                renderBabyBoyProducts();
+            } else if (pageName === 'babyGirl') {
+                renderBabyGirlProducts();
+            } else if (pageName === 'others') {
+                renderOtherProducts();
+            }
+            
+            // Close cart if open
+            document.getElementById('cartSidebar').classList.remove('open');
+            
+            // Close mobile menu if open
+            const mobileMenu = document.getElementById('mobileMenu');
+            if (mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+            }
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        // Format number to Bangla
+        function formatPrice(num) {
+            return num.toLocaleString('bn-BD');
+        }
+
+        // Render Special Products (Home Page)
+        function renderProducts() {
+            const grid = document.getElementById('productsGrid');
+            if (!grid) return;
+            
+            grid.innerHTML = products.map(product => `
+                <div class="product-card">
+                    <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
+                    <div class="product-info">
+                        <div class="product-name"><i class="${product.icon}"></i> ${product.name}</div>
+                        <div class="product-price">৳ ${formatPrice(product.price)}</div>
+                        <button class="add-to-cart-btn" onclick="addToCart(${product.id}, 'special')">
+                            <i class="fas fa-cart-plus"></i> কার্টে যোগ করুন
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+
+            // Update admin product list
+            const productsList = document.getElementById('productsList');
+            if (productsList) {
+                productsList.innerHTML = products.map(product => `
+                    <div class="product-list-item">
+                        <div>
+                            <strong><i class="${product.icon}"></i> ${product.name}</strong><br>
+                            ৳ ${formatPrice(product.price)}
+                        </div>
+                        <button class="btn btn-danger" onclick="deleteProduct(${product.id}, 'special')">
+                            <i class="fas fa-trash"></i> ডিলিট
+                        </button>
+                    </div>
+                `).join('');
+            }
+        }
+
+        // Render Baby Boy Products
+        function renderBabyBoyProducts() {
+            const grid = document.getElementById('babyBoyGrid');
+            if (!grid) return;
+            
+            grid.innerHTML = babyBoyProducts.map(product => `
+                <div class="product-card">
+                    <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
+                    <div class="product-info">
+                        <div class="product-name"><i class="${product.icon}"></i> ${product.name}</div>
+                        <div class="product-price">৳ ${formatPrice(product.price)}</div>
+                        <button class="add-to-cart-btn" onclick="addToCart(${product.id}, 'babyBoy')">
+                            <i class="fas fa-cart-plus"></i> কার্টে যোগ করুন
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+
+            const list = document.getElementById('babyBoyList');
+            if (list) {
+                list.innerHTML = babyBoyProducts.map(product => `
+                    <div class="product-list-item">
+                        <div>
+                            <strong><i class="${product.icon}"></i> ${product.name}</strong><br>
+                            ৳ ${formatPrice(product.price)}
+                        </div>
+                        <button class="btn btn-danger" onclick="deleteProduct(${product.id}, 'babyBoy')">
+                            <i class="fas fa-trash"></i> ডিলিট
+                        </button>
+                    </div>
+                `).join('');
+            }
+        }
+
+        // Render Baby Girl Products
+        function renderBabyGirlProducts() {
+            const grid = document.getElementById('babyGirlGrid');
+            if (!grid) return;
+            
+            grid.innerHTML = babyGirlProducts.map(product => `
+                <div class="product-card">
+                    <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
+                    <div class="product-info">
+                        <div class="product-name"><i class="${product.icon}"></i> ${product.name}</div>
+                        <div class="product-price">৳ ${formatPrice(product.price)}</div>
+                        <button class="add-to-cart-btn" onclick="addToCart(${product.id}, 'babyGirl')">
+                            <i class="fas fa-cart-plus"></i> কার্টে যোগ করুন
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+
+            const list = document.getElementById('babyGirlList');
+            if (list) {
+                list.innerHTML = babyGirlProducts.map(product => `
+                    <div class="product-list-item">
+                        <div>
+                            <strong><i class="${product.icon}"></i> ${product.name}</strong><br>
+                            ৳ ${formatPrice(product.price)}
+                        </div>
+                        <button class="btn btn-danger" onclick="deleteProduct(${product.id}, 'babyGirl')">
+                            <i class="fas fa-trash"></i> ডিলিট
+                        </button>
+                    </div>
+                `).join('');
+            }
+        }
+
+        // Render Other Products
+        function renderOtherProducts() {
+            const grid = document.getElementById('othersGrid');
+            if (!grid) return;
+            
+            grid.innerHTML = otherProducts.map(product => `
+                <div class="product-card">
+                    <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
+                    <div class="product-info">
+                        <div class="product-name"><i class="${product.icon}"></i> ${product.name}</div>
+                        <div class="product-price">৳ ${formatPrice(product.price)}</div>
+                        <button class="add-to-cart-btn" onclick="addToCart(${product.id}, 'others')">
+                            <i class="fas fa-cart-plus"></i> কার্টে যোগ করুন
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+
+            const list = document.getElementById('othersList');
+            if (list) {
+                list.innerHTML = otherProducts.map(product => `
+                    <div class="product-list-item">
+                        <div>
+                            <strong><i class="${product.icon}"></i> ${product.name}</strong><br>
+                            ৳ ${formatPrice(product.price)}
+                        </div>
+                        <button class="btn btn-danger" onclick="deleteProduct(${product.id}, 'others')">
+                            <i class="fas fa-trash"></i> ডিলিট
+                        </button>
+                    </div>
+                `).join('');
+            }
+        }
+
+        // Cart Functions
+        function addToCart(productId, category) {
+            let product;
+            
+            if (category === 'special') {
+                product = products.find(p => p.id === productId);
+            } else if (category === 'babyBoy') {
+                product = babyBoyProducts.find(p => p.id === productId);
+            } else if (category === 'babyGirl') {
+                product = babyGirlProducts.find(p => p.id === productId);
+            } else if (category === 'others') {
+                product = otherProducts.find(p => p.id === productId);
+            }
+            
+            if (product) {
+                cart.push({...product, category: category});
+                updateCart();
+                
+                // Show notification
+                showNotification(`${product.name} কার্টে যোগ হয়েছে!`, 'success');
+            }
+        }
+
+        function showNotification(message, type) {
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 80px;
+                right: 15px;
+                background: ${type === 'success' ? '#27ae60' : '#e74c3c'};
+                color: white;
+                padding: 0.8rem 1.2rem;
+                border-radius: 8px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+                z-index: 9999;
+                animation: slideIn 0.3s, fadeOut 0.3s 2.7s;
+                max-width: 300px;
+                border-left: 4px solid ${type === 'success' ? '#229954' : '#c0392b'};
+                font-size: 0.9rem;
+            `;
+            notification.innerHTML = `<i class="fas fa-${type === 'success' ? 'check' : 'exclamation'}-circle"></i> ${message}`;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+
+        function removeFromCart(index) {
+            const itemName = cart[index].name;
+            cart.splice(index, 1);
+            updateCart();
+            showNotification(`${itemName} কার্ট থেকে সরানো হয়েছে`, 'danger');
+        }
+
+        function updateCart() {
+            const badge = document.getElementById('cartBadge');
+            badge.textContent = cart.length;
+
+            const cartItems = document.getElementById('cartItems');
+            const cartItemCount = document.getElementById('cartItemCount');
+            cartItemCount.textContent = cart.length;
+            
+            if (cart.length === 0) {
+                cartItems.innerHTML = `
+                    <div class="empty-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>আপনার কার্ট খালি</p>
+                        <p style="font-size: 0.9rem; margin-top: 1rem;">প্রোডাক্ট যোগ করে কার্ট পূরণ করুন</p>
+                    </div>`;
+                document.querySelector('.checkout-btn').style.display = 'none';
+                document.getElementById('cartWidgetCount').innerHTML = `
+                    <i class="fas fa-box"></i> 0 আইটেম
+                `;
+            } else {
+                cartItems.innerHTML = cart.map((item, index) => `
+                    <div class="cart-item">
+                        <img src="${item.image}" class="cart-item-image" alt="${item.name}" loading="lazy">
+                        <div class="cart-item-info">
+                            <div class="cart-item-name"><i class="${item.icon}"></i> ${item.name}</div>
+                            <div class="cart-item-price">৳ ${formatPrice(item.price)}</div>
+                            <button class="remove-btn" onclick="removeFromCart(${index})">
+                                <i class="fas fa-trash"></i> সরান
+                            </button>
+                        </div>
+                    </div>
+                `).join('');
+                document.querySelector('.checkout-btn').style.display = 'block';
+                
+                const total = cart.reduce((sum, item) => sum + item.price, 0);
+                document.getElementById('cartWidgetCount').innerHTML = `
+                    <i class="fas fa-box"></i> ${cart.length} আইটেম • ৳ ${formatPrice(total)}
+                `;
+            }
+
+            const total = cart.reduce((sum, item) => sum + item.price, 0);
+            document.getElementById('cartTotal').innerHTML = `
+                <span><i class="fas fa-coins"></i> মোট</span>
+                <span>৳ ${formatPrice(total)}</span>
+            `;
+        }
+
+        function toggleCart() {
+            const cartSidebar = document.getElementById('cartSidebar');
+            cartSidebar.classList.toggle('open');
+            
+            // Close mobile menu if open
+            const mobileMenu = document.getElementById('mobileMenu');
+            if (mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+            }
+        }
+
+        // Checkout Functions
+        function openCheckout() {
+            if (cart.length === 0) {
+                showNotification('আপনার কার্ট খালি!', 'danger');
+                return;
+            }
+
+            const checkoutItems = document.getElementById('checkoutItems');
+            checkoutItems.innerHTML = cart.map(item => `
+                <div class="order-item">
+                    <span><i class="${item.icon}"></i> ${item.name}</span>
+                    <span>৳ ${formatPrice(item.price)}</span>
+                </div>
+            `).join('');
+
+            const total = cart.reduce((sum, item) => sum + item.price, 0);
+            document.getElementById('checkoutTotal').textContent = `৳ ${formatPrice(total)}`;
+
+            document.getElementById('checkoutModal').style.display = 'block';
+            document.getElementById('cartSidebar').classList.remove('open');
+        }
+
+        function closeCheckout() {
+            document.getElementById('checkoutModal').style.display = 'none';
+        }
+
+        function selectPayment(method) {
+            selectedPayment = method;
+            
+            document.querySelectorAll('.payment-option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            
+            // Find the clicked payment option
+            event.currentTarget.classList.add('selected');
+
+            document.querySelectorAll('.payment-details').forEach(detail => {
+                detail.classList.remove('active');
+            });
+            document.getElementById(method + 'Details').classList.add('active');
+        }
+
+        // Delivery Form Submit
+        document.getElementById('deliveryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('customerName').value;
+            const phone = document.getElementById('customerPhone').value;
+            const address = document.getElementById('customerAddress').value;
+
+            let paymentInfo = { method: selectedPayment };
+
+            if (selectedPayment === 'bkash') {
+                const trxId = document.getElementById('bkashTrxId').value;
+                if (!trxId) {
+                    showNotification('অনুগ্রহ করে bKash Transaction ID দিন!', 'danger');
+                    return;
+                }
+                paymentInfo.trxId = trxId;
+            } else if (selectedPayment === 'nagad') {
+                const trxId = document.getElementById('nagadTrxId').value;
+                if (!trxId) {
+                    showNotification('অনুগ্রহ করে Nagad Transaction ID দিন!', 'danger');
+                    return;
+                }
+                paymentInfo.trxId = trxId;
+            }
+
+            const order = {
+                id: Date.now(),
+                orderNumber: 'ORD' + Date.now().toString().slice(-6),
+                customer: { name, phone, address },
+                items: [...cart],
+                total: cart.reduce((sum, item) => sum + item.price, 0),
+                payment: paymentInfo,
+                date: new Date().toLocaleString('bn-BD'),
+                status: 'পেন্ডিং'
+            };
+
+            orders.push(order);
+            
+            document.getElementById('orderNumber').textContent = order.orderNumber;
+            document.getElementById('checkoutModal').style.display = 'none';
+            document.getElementById('successModal').style.display = 'block';
+
+            cart = [];
+            updateCart();
+            this.reset();
+            
+            // Reset payment selection
+            selectPayment('cod');
+        });
+
+        function closeSuccess() {
+            document.getElementById('successModal').style.display = 'none';
+        }
+
+        // Admin Functions - FIXED VERSION
+        function checkPassword() {
+            const password = prompt('Admin পাসওয়ার্ড লিখুন:');
+            if (password === ADMIN_PASSWORD) {
+                openAdmin();
+            } else if (password !== null) {
+                showNotification('ভুল পাসওয়ার্ড! আবার চেষ্টা করুন।', 'danger');
+            }
+        }
+
+        // Direct Admin Access (Temporary)
+        function openAdminDirectly() {
+            document.getElementById('adminModal').style.display = 'block';
+            showNotification('Admin Panel সরাসরি ওপেন করা হয়েছে!', 'success');
+            
+            // Load all content
+            loadAdminContent();
+        }
+
+        function openAdmin() {
+            document.getElementById('adminModal').style.display = 'block';
+            
+            // Load all content
+            loadAdminContent();
+            
+            showNotification('Admin Panel ওপেন করা হয়েছে!', 'success');
+        }
+
+        function loadAdminContent() {
+            // Set about text
+            if (document.getElementById('aboutText')) {
+                document.getElementById('aboutText').value = aboutText.replace(/<[^>]*>/g, '').replace(/\n\s*\n/g, '\n').trim();
+            }
+            
+            // Set contact text
+            if (document.getElementById('contactText')) {
+                document.getElementById('contactText').value = contactText.replace(/<[^>]*>/g, '').replace(/\n\s*\n/g, '\n').trim();
+            }
+            
+            // Render orders
+            renderOrders();
+            
+            // Render product lists
+            renderProductLists();
+            
+            // Close mobile menu if open
+            const mobileMenu = document.getElementById('mobileMenu');
+            if (mobileMenu && mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+            }
+        }
+
+        function closeAdmin() {
+            document.getElementById('adminModal').style.display = 'none';
+        }
+
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            
+            event.currentTarget.classList.add('active');
+            document.getElementById(tabName).classList.add('active');
+        }
+
+        // Render Orders in Admin
+        function renderOrders() {
+            const ordersList = document.getElementById('ordersList');
+            
+            if (orders.length === 0) {
+                ordersList.innerHTML = '<p style="text-align:center; color: var(--text-light); padding: 2rem;"><i class="fas fa-clipboard-list" style="font-size: 2.5rem; margin-bottom: 1rem; display: block; color: #f5e6a8;"></i> কোন অর্ডার নেই</p>';
+                return;
+            }
+
+            ordersList.innerHTML = orders.map(order => `
+                <div class="product-list-item" style="flex-direction: column; align-items: flex-start;">
+                    <div style="width: 100%; display: flex; justify-content: space-between; margin-bottom: 1rem; flex-wrap: wrap;">
+                        <div>
+                            <strong><i class="fas fa-hashtag"></i> অর্ডার নম্বর:</strong> ${order.orderNumber}<br>
+                            <strong><i class="fas fa-calendar"></i> তারিখ:</strong> ${order.date}<br>
+                            <strong><i class="fas fa-info-circle"></i> স্ট্যাটাস:</strong> 
+                            <span style="color: #e67e22; font-weight: bold;">${order.status}</span>
+                        </div>
+                        <div style="text-align: right; margin-top: 0.5rem;">
+                            <strong style="color: var(--primary-gold); font-size: 1.3rem;">৳ ${formatPrice(order.total)}</strong>
+                        </div>
+                    </div>
+                    <div style="width: 100%; background: var(--background-gold); padding: 1rem; border-radius: 8px; margin-bottom: 0.5rem;">
+                        <strong><i class="fas fa-user"></i> কাস্টমার তথ্য:</strong><br>
+                        নাম: ${order.customer.name}<br>
+                        ফোন: ${order.customer.phone}<br>
+                        ঠিকানা: ${order.customer.address}
+                    </div>
+                    <div style="width: 100%; background: #f0f0ff; padding: 1rem; border-radius: 8px; margin-bottom: 0.5rem;">
+                        <strong><i class="fas fa-credit-card"></i> পেমেন্ট:</strong> 
+                        ${order.payment.method === 'cod' ? 'ক্যাশ অন ডেলিভারি' : order.payment.method === 'bkash' ? 'bKash' : 'Nagad'}
+                        ${order.payment.trxId ? '<br>Transaction ID: ' + order.payment.trxId : ''}
+                    </div>
+                    <div style="width: 100%;">
+                        <strong><i class="fas fa-box"></i> পণ্য:</strong><br>
+                        ${order.items.map(item => `<i class="${item.icon}"></i> ${item.name} (৳ ${formatPrice(item.price)})`).join('<br>')}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Render all product lists in Admin
+        function renderProductLists() {
+            // Special products list
+            const productsList = document.getElementById('productsList');
+            if (productsList) {
+                productsList.innerHTML = products.map(product => `
+                    <div class="product-list-item">
+                        <div>
+                            <strong><i class="${product.icon}"></i> ${product.name}</strong><br>
+                            ৳ ${formatPrice(product.price)}
+                        </div>
+                        <button class="btn btn-danger" onclick="deleteProduct(${product.id}, 'special')">
+                            <i class="fas fa-trash"></i> ডিলিট
+                        </button>
+                    </div>
+                `).join('');
+            }
+
+            // Baby boy products list
+            const babyBoyList = document.getElementById('babyBoyList');
+            if (babyBoyList) {
+                babyBoyList.innerHTML = babyBoyProducts.map(product => `
+                    <div class="product-list-item">
+                        <div>
+                            <strong><i class="${product.icon}"></i> ${product.name}</strong><br>
+                            ৳ ${formatPrice(product.price)}
+                        </div>
+                        <button class="btn btn-danger" onclick="deleteProduct(${product.id}, 'babyBoy')">
+                            <i class="fas fa-trash"></i> ডিলিট
+                        </button>
+                    </div>
+                `).join('');
+            }
+
+            // Baby girl products list
+            const babyGirlList = document.getElementById('babyGirlList');
+            if (babyGirlList) {
+                babyGirlList.innerHTML = babyGirlProducts.map(product => `
+                    <div class="product-list-item">
+                        <div>
+                            <strong><i class="${product.icon}"></i> ${product.name}</strong><br>
+                            ৳ ${formatPrice(product.price)}
+                        </div>
+                        <button class="btn btn-danger" onclick="deleteProduct(${product.id}, 'babyGirl')">
+                            <i class="fas fa-trash"></i> ডিলিট
+                        </button>
+                    </div>
+                `).join('');
+            }
+
+            // Other products list
+            const othersList = document.getElementById('othersList');
+            if (othersList) {
+                othersList.innerHTML = otherProducts.map(product => `
+                    <div class="product-list-item">
+                        <div>
+                            <strong><i class="${product.icon}"></i> ${product.name}</strong><br>
+                            ৳ ${formatPrice(product.price)}
+                        </div>
+                        <button class="btn btn-danger" onclick="deleteProduct(${product.id}, 'others')">
+                            <i class="fas fa-trash"></i> ডিলিট
+                        </button>
+                    </div>
+                `).join('');
+            }
+        }
+
+        // Product Forms
+        document.getElementById('productForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('productName').value;
+            const price = parseInt(document.getElementById('productPrice').value);
+            const imageUrl = document.getElementById('productImageUrl').value;
+            
+            if (!name || !price || !imageUrl) {
+                showNotification('অনুগ্রহ করে সব তথ্য পূরণ করুন!', 'danger');
+                return;
+            }
+            
+            const icons = ['fas fa-bed', 'fas fa-snowflake', 'fas fa-bath', 'fas fa-moon', 'fas fa-glass-cheers', 'fas fa-tshirt', 'fas fa-star'];
+            const randomIcon = icons[Math.floor(Math.random() * icons.length)];
+            
+            const newProduct = {
+                id: Date.now(),
+                name: name,
+                price: price,
+                image: imageUrl,
+                icon: randomIcon
+            };
+            
+            products.push(newProduct);
+            renderProducts();
+            renderProductLists();
+            this.reset();
+            showNotification('বিশেষ পণ্য সফলভাবে যোগ হয়েছে!', 'success');
+        });
+
+        document.getElementById('babyBoyForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('babyBoyName').value;
+            const price = parseInt(document.getElementById('babyBoyPrice').value);
+            const imageUrl = document.getElementById('babyBoyImageUrl').value;
+            
+            if (!name || !price || !imageUrl) {
+                showNotification('অনুগ্রহ করে সব তথ্য পূরণ করুন!', 'danger');
+                return;
+            }
+            
+            const icons = ['fas fa-child', 'fas fa-tshirt', 'fas fa-vest', 'fas fa-jacket', 'fas fa-running', 'fas fa-user-tie'];
+            const randomIcon = icons[Math.floor(Math.random() * icons.length)];
+            
+            const newProduct = {
+                id: Date.now(),
+                name: name,
+                price: price,
+                image: imageUrl,
+                icon: randomIcon
+            };
+            
+            babyBoyProducts.push(newProduct);
+            renderBabyBoyProducts();
+            renderProductLists();
+            this.reset();
+            showNotification('বেবি বয় পোশাক সফলভাবে যোগ হয়েছে!', 'success');
+        });
+
+        document.getElementById('babyGirlForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('babyGirlName').value;
+            const price = parseInt(document.getElementById('babyGirlPrice').value);
+            const imageUrl = document.getElementById('babyGirlImageUrl').value;
+            
+            if (!name || !price || !imageUrl) {
+                showNotification('অনুগ্রহ করে সব তথ্য পূরণ করুন!', 'danger');
+                return;
+            }
+            
+            const icons = ['fas fa-female', 'fas fa-leaf', 'fas fa-crown', 'fas fa-tshirt', 'fas fa-star', 'fas fa-glass-cheers'];
+            const randomIcon = icons[Math.floor(Math.random() * icons.length)];
+            
+            const newProduct = {
+                id: Date.now(),
+                name: name,
+                price: price,
+                image: imageUrl,
+                icon: randomIcon
+            };
+            
+            babyGirlProducts.push(newProduct);
+            renderBabyGirlProducts();
+            renderProductLists();
+            this.reset();
+            showNotification('বেবি গার্ল পোশাক সফলভাবে যোগ হয়েছে!', 'success');
+        });
+
+        document.getElementById('othersForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('othersName').value;
+            const price = parseInt(document.getElementById('othersPrice').value);
+            const imageUrl = document.getElementById('othersImageUrl').value;
+            
+            if (!name || !price || !imageUrl) {
+                showNotification('অনুগ্রহ করে সব তথ্য পূরণ করুন!', 'danger');
+                return;
+            }
+            
+            const icons = ['fas fa-shopping-bag', 'fas fa-snowflake', 'fas fa-shoe-prints', 'fas fa-gamepad', 'fas fa-hat-cowboy', 'fas fa-bath'];
+            const randomIcon = icons[Math.floor(Math.random() * icons.length)];
+            
+            const newProduct = {
+                id: Date.now(),
+                name: name,
+                price: price,
+                image: imageUrl,
+                icon: randomIcon
+            };
+            
+            otherProducts.push(newProduct);
+            renderOtherProducts();
+            renderProductLists();
+            this.reset();
+            showNotification('অন্যান্য প্রোডাক্ট সফলভাবে যোগ হয়েছে!', 'success');
+        });
+
+        function deleteProduct(id, category) {
+            if (confirm('আপনি কি এই প্রোডাক্টটি ডিলিট করতে চান?')) {
+                if (category === 'special') {
+                    products = products.filter(p => p.id !== id);
+                    renderProducts();
+                } else if (category === 'babyBoy') {
+                    babyBoyProducts = babyBoyProducts.filter(p => p.id !== id);
+                    renderBabyBoyProducts();
+                } else if (category === 'babyGirl') {
+                    babyGirlProducts = babyGirlProducts.filter(p => p.id !== id);
+                    renderBabyGirlProducts();
+                } else if (category === 'others') {
+                    otherProducts = otherProducts.filter(p => p.id !== id);
+                    renderOtherProducts();
+                }
+                
+                // Update admin lists
+                renderProductLists();
+                showNotification('প্রোডাক্ট ডিলিট করা হয়েছে!', 'success');
+            }
+        }
+
+        // About Form
+        document.getElementById('aboutForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const text = document.getElementById('aboutText').value;
+            aboutText = text.split('\n').filter(line => line.trim()).map(line => `<p>${line}</p>`).join('');
+            document.getElementById('aboutContent').innerHTML = aboutText;
+            showNotification('About পেজ আপডেট হয়েছে!', 'success');
+        });
+
+        // Contact Form
+        document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const text = document.getElementById('contactText').value;
+            contactText = text.split('\n').filter(line => line.trim()).map(line => `<p>${line}</p>`).join('');
+            document.getElementById('contactContent').innerHTML = contactText;
+            showNotification('Contact পেজ আপডেট হয়েছে!', 'success');
+        });
+
+        // Initial Render
+        renderProducts();
+        renderBabyBoyProducts();
+        renderBabyGirlProducts();
+        renderOtherProducts();
+        updateCart();
+        document.getElementById('aboutContent').innerHTML = aboutText;
+        document.getElementById('contactContent').innerHTML = contactText;
+
+        // Initialize payment selection
+        selectPayment('cod');
+        
+        // Add CSS for notification animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from { transform: translateX(100%); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
+            }
+            
+            @keyframes fadeOut {
+                from { opacity: 1; }
+                to { opacity: 0; }
+            }
+            
+            /* Improve touch targets for mobile */
+            @media (max-width: 767px) {
+                .add-to-cart-btn,
+                .btn,
+                .checkout-btn,
+                .remove-btn,
+                .tab,
+                .payment-option,
+                .category-card,
+                .cart-widget-btn,
+                .cart-icon,
+                .menu-toggle {
+                    min-height: 44px;
+                }
+                
+                input,
+                select,
+                textarea {
+                    font-size: 16px !important;
+                }
+            }
+            
+            /* Category card hover effects */
+            .category-card {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            
+            .category-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            }
+            
+            /* Cart widget animation */
+            .quick-cart-widget {
+                animation: pulse 2s infinite;
+            }
+            
+            @keyframes pulse {
+                0% { box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3); }
+                50% { box-shadow: 0 10px 30px rgba(212, 175, 55, 0.5); }
+                100% { box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
